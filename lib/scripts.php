@@ -10,7 +10,8 @@ function naked_scripts()  {
       'css' => '/assets/css/main.css',
       'js' => '/assets/js/scripts.js',
       'modernizr' => '/assets/vendor/modernizr/modernizr.js',
-      'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
+      'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js',
+      'typekit'   => '//use.typekit.net/caf7qdg.js'
     );
   }
 
@@ -19,17 +20,20 @@ function naked_scripts()  {
    * Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
    * It's kept in the header instead of footer to avoid conflicts with plugins.
    */
-  
+
   if (!is_admin() && current_theme_supports('jquery-cdn')) {
     wp_deregister_script('jquery');
     wp_register_script('jquery', $assets['jquery'], array(), null, true);
     add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
   }
 
+  wp_register_script('typekit', $assets['typekit'], array(), null, true);
+
   wp_enqueue_style('naked_css', get_template_directory_uri() . $assets['css'], false, null);
   wp_enqueue_script('naked_js', get_template_directory_uri() . $assets['js'], array(), null, true);
   wp_enqueue_script('modernizr', get_template_directory_uri() . $assets['modernizr'], array(), null, true);
   wp_enqueue_script('jquery');
+  wp_enqueue_script('typekit');
   
 }
 add_action( 'wp_enqueue_scripts', 'naked_scripts', 100 ); // Register this fxn and allow Wordpress to call it automatcally in the header
