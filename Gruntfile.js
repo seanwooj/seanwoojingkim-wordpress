@@ -4,7 +4,8 @@
 module.exports = function(grunt) {
   var jsFileList = [
     'assets/js/plugins/*.js',
-    'assets/js/_*.js'
+    'assets/js/_*.js',
+    'assets/vendor/jquery-color/jquery.color.js'
   ];
 
   grunt.initConfig({ pkg: grunt.file.readJSON('package.json'),
