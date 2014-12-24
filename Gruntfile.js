@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     'assets/js/_*.js'
   ];
 
-  grunt.initConfig({ pkg: grunt.file.readJSON('package.json'), 
+  grunt.initConfig({ pkg: grunt.file.readJSON('package.json'),
     sass: {
       dist: {
         options: {
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      }, 
+      },
       build: {
         files: {
           'assets/js/scripts.min.js': ['<%= concat.dist.dest %>']
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         files: 'assets/scss/*.scss',
         tasks: 'sass'
       },
-      
+
       js: {
         files: [
           jsFileList,
