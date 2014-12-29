@@ -3,7 +3,7 @@
 /* Enqueue Styles and Scripts
 /*-----------------------------------------------------------------------------------*/
 
-function naked_scripts()  { 
+function naked_scripts()  {
 
   if (WP_ENV === 'development') {
     $assets = array(
@@ -27,14 +27,15 @@ function naked_scripts()  {
     add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
   }
 
+  wp_enqueue_script('jquery');
+
   wp_register_script('typekit', $assets['typekit'], array(), null, true);
 
   wp_enqueue_style('naked_css', get_template_directory_uri() . $assets['css'], false, null);
   wp_enqueue_script('naked_js', get_template_directory_uri() . $assets['js'], array(), null, true);
   wp_enqueue_script('modernizr', get_template_directory_uri() . $assets['modernizr'], array(), null, true);
-  wp_enqueue_script('jquery');
   wp_enqueue_script('typekit');
-  
+
 }
 add_action( 'wp_enqueue_scripts', 'naked_scripts', 100 ); // Register this fxn and allow Wordpress to call it automatcally in the header
 

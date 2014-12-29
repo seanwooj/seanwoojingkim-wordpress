@@ -1,0 +1,120 @@
+/*Header*/
+header {
+  background-color:transparent;
+  left:0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+}
+
+.header {
+  position:relative;
+  width:100%;
+}
+
+.logo {
+  background-image: url(../images/logo.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 20px;
+  margin: 26px 0;
+  width: 234px;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+
+nav#navigation {
+  float: right;
+  margin-top: 0px;
+}
+
+nav#navigation ul{
+  display: block;
+  padding: 15px 0;
+  margin-bottom: 0;
+}
+
+nav#navigation li {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0;
+}
+
+nav#navigation li a {
+    color: #ffffff;
+    font-family: "proxima-nova";
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+    padding: 12px 13px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+nav#navigation li a:hover {
+    color: #878787;
+}
+
+nav#navigation a:after {
+  border-bottom: 2px solid transparent;
+    content: "";
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 6px;
+    width: 14px;
+    z-index: 0;
+}
+
+nav#navigation a.active {
+    color: #878787;
+}
+
+nav#navigation a.active:after {
+  border-bottom: 2px solid #878787;
+    content: "";
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 6px;
+    width: 14px;
+    z-index: 0;
+}
+
+.mobile-navigation {
+  background-color: transparent;
+  background-image: url(../images/mobile-navigation.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:none;
+  height: 21px;
+  opacity: 0.75;
+  position: absolute;
+  right: 5px;
+  text-align:center;
+  top: 23px;
+  width: 21px;
+  z-index:1000;
+}
+
+.mobile-navigation:hover {
+  opacity: 1;
+}
+
+.mobile-navigation i {
+  font-size:16px;
+  color:#111111;
+}
+/*Header*/

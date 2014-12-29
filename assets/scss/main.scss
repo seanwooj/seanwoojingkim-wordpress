@@ -15,4 +15,5 @@ we aim to organize our site's CSS in the following pattern:
 */
 
 @import 'base/_variables'; // loading this first in base because the variables should trickle down before other things in base
-@import 'base/_naked.scss'; 
+@import 'layout/_skeleton.scss';
+@import 'layout/_header.scss';
