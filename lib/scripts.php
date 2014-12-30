@@ -24,12 +24,12 @@ function naked_scripts()  {
   if (!is_admin() && current_theme_supports('jquery-cdn')) {
     wp_deregister_script('jquery');
     wp_register_script('jquery', $assets['jquery'], array(), null, true);
-    add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
+    add_filter('script_loader_src', 'naked_jquery_local_fallback', 10, 2);
   }
 
   wp_enqueue_script('jquery');
 
-  wp_register_script('typekit', $assets['typekit'], array(), null, true);
+  wp_register_script('typekit', $assets['typekit'], array(), null, false);
 
   wp_enqueue_style('naked_css', get_template_directory_uri() . $assets['css'], false, null);
   wp_enqueue_script('naked_js', get_template_directory_uri() . $assets['js'], array(), null, true);
@@ -41,7 +41,7 @@ add_action( 'wp_enqueue_scripts', 'naked_scripts', 100 ); // Register this fxn a
 
 
 // http://wordpress.stackexchange.com/a/12450
-function roots_jquery_local_fallback($src, $handle = null) {
+function naked_jquery_local_fallback($src, $handle = null) {
   static $add_jquery_fallback = false;
 
   if ($add_jquery_fallback) {
@@ -55,6 +55,14 @@ function roots_jquery_local_fallback($src, $handle = null) {
 
   return $src;
 }
-add_action('wp_head', 'roots_jquery_local_fallback');
+add_action('wp_head', 'naked_jquery_local_fallback');
+
+// http://wptheming.com/2013/02/typekit-code-snippet/
+function naked_typekit_inline() {
+  if ( wp_script_is( 'typekit', 'done' ) ) { ?>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <?php }
+}
+add_action( 'wp_head', 'naked_typekit_inline' );
 
 ?>

@@ -22,7 +22,7 @@ $(function(){
     limit: 8,
     template: "<li><a href='{{link}}'><img data-src='{{image}}' /></a></li>"
   });
-  feed.run();
+  // feed.run();
 
   var mobile_nav_open = false;
   $(".mobile-navigation").click(function() {

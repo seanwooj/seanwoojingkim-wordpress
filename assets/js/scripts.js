@@ -1306,7 +1306,7 @@ jQuery.extend( jQuery.easing,
     limit: 8,
     template: "<li><a href='{{link}}'><img data-src='{{image}}' /></a></li>"
   });
-  feed.run();
+  // feed.run();
 
   var mobile_nav_open = false;
   $(".mobile-navigation").click(function() {
@@ -1409,7 +1409,8 @@ jQuery.extend( jQuery.easing,
     window.open(i, "_blank");
   });
 
-});;/*!
+});
+;/*!
  * jQuery Color Animations v@VERSION
  * https://github.com/jquery/jquery-color
  *
