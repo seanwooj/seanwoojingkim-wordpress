@@ -49,7 +49,9 @@ get_template_part('templates/masthead');
 
 			<?php endif; // OK, I think that takes care of both scenarios (having a post or not having a post to show) ?>
 
-      <h1 class="title">More Projects</h1>
+      <div class="more-projects">
+        <h1 class="title">More Projects</h1>
+      </div>
       <?php get_template_part('templates/portfolio-home'); ?>
 
 		</div><!-- #content .site-content -->

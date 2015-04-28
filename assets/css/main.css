@@ -1723,10 +1723,17 @@ nav#navigation a.active:after {
   margin-bottom: 2em;
 }
 
+.the-content {
+  padding: 0 20px;
+}
 .the-content div {
   margin-bottom: 30px;
   font-size: 20px;
   line-height: 1.5em;
+}
+
+.more-projects {
+  text-align: center;
 }
 
 /*
