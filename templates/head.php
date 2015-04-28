@@ -1,4 +1,4 @@
-<!DOCTYPE html <?php language_attributes(); ?>>
+<!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
 
 <head>

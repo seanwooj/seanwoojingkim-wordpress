@@ -19,7 +19,7 @@
       <div class="two-thirds column">
         <div class="right social">
           <ul>
-            <li> REPLACE WITH SOCIAL LINKS WITHIN WORDPRESS </li>
+            <!--<li> REPLACE WITH SOCIAL LINKS WITHIN WORDPRESS </li>-->
             <li class="facebook" data-url="https://www.facebook.com/seanwooj"><i class="step fi-social-facebook size-24"></i></li>
             <li class="twitter" data-url="https://twitter.com/seanwoojinkim"><i class="step fi-social-twitter size-24"></i></li>
             <li class="linkedin" data-url="https://www.linkedin.com/in/seanwkim"><i class="step fi-social-linkedin size-24"></i></li>

@@ -12,7 +12,10 @@ $theme_includes = array(
 	'lib/scripts.php',                // Scripts and stylesheets
 	'lib/nav.php',                    // Navigation and sidebar definition
 	'lib/config.php',                 // Configuration and theme support
-  'lib/wrapper.php'                 // Wrapper functionality
+  'lib/wrapper.php',                // Wrapper functionality
+  'lib/pagebuilder.php',            // Filters and actions for siteorigin-panels plugin
+  'lib/custom-post-types.php'       // Custom post types (portfolio and such)
+
 );
 
 foreach ($theme_includes as $file) {

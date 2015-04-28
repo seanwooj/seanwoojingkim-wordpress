@@ -93,7 +93,7 @@
     color: #181818;
     font-family: "proxima-nova", sans-serif;
     letter-spacing: 0.1rem;
-    font-weight: 100;
+    font-weight: 300;
     line-height: normal; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit;}
   h1 { font-family: "proxima-nova"; font-size: 46px; margin-bottom: 14px;}
@@ -111,6 +111,14 @@
   em { font-style: italic; }
   strong { font-weight: bold; color: #333; }
   small { font-size: 80%; }
+
+  p {
+    color: #999;
+    font-family: georgia, palatino, baskerville, times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+  }
 
 /*  Blockquotes  */
   blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
@@ -279,7 +287,6 @@
 div.about p {
   color:#999;
   font-family: georgia, palatino, baskerville, times, serif;
-  font-size: 14px;
   font-weight: 400;
   line-height: 36px;
   margin: 0 auto;
@@ -316,7 +323,8 @@ section.work {
 section.work .work_link {
 }
 
-section.work .work_link .work_content {
+section.work .work_link {
+  display: block;
   height: auto;
   overflow: hidden;
   position: relative;
@@ -364,6 +372,7 @@ section.work .work_link .overlay_content {
   bottom: 0;
   position: absolute;
   margin: auto;
+  text-align: center;
 }
 
 section.work .work_link .overlay_content h3, section.work .work_link .overlay_content h5 {
@@ -833,119 +842,4 @@ div.footer .right li i {
 }
 /*Footer*/
 
-
-/* Mobile Portrait Size -> Mobile Landscape Size */
-@media only screen and (max-width:660px) {
-
-  input, textarea {
-    -webkit-appearance: none;
-  }
-
-  html {
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust:none;
-    -ms-text-size-adjust:none;
-    overflow-x: hidden;
-  }
-
-  #wrapper {
-    overflow: hidden;
-  }
-
-  /*--masthead--*/
-  .masthead h1 {
-    font-size: 36px;
-  }
-
-  .masthead p {
-    font-size: 14px;
-  }
-
-  /*--masthead--*/
-
-
-  /*--About--*/
-  div.about p {
-    width: 300px;
-  }
-  /*--About--*/
-
-  /*--Nav--*/
-  .logo {
-    margin: 23px 10px;
-  }
-
-  nav#navigation {
-    float:none;
-    margin-right:0;
-  }
-
-  nav#navigation ul {
-    display:none;
-    margin-bottom:20px;
-  }
-
-  nav#navigation li {
-    float:none;
-    display:block;
-  }
-
-  nav#navigation a.active:after {
-    right:1px;
-    top:22px;
-  }
-
-  nav#navigation li a {
-    display:inline-block;
-  }
-
-  nav#navigation a:after {
-    opacity: 0;
-  }
-
-  .mobile-navigation {
-    display: inline-block;
-  }
-  /*--Nav--*/
-
-  /*Work*/
-  section.work .work_link .work_content {
-    width: 50%;
-  }
-
-  /*Contact*/
-  section.contact {
-    background-attachment: scroll;
-    background-position: center center !important;
-    background-repeat: repeat;
-    background-size: cover;
-  }
-
-  div.contact .form {
-    width:100%;
-  }
-
-  div.form textarea, div.form form, div.form input[type="text"] {
-    padding: 10px 10px;
-    width:100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:border-box;
-    -ms-box-sizing:border-box;
-  }
-  /*Contact*/
-
-  /*Instagram*/
-
-  #instagram #instafeed li {
-    width: 50%;
-  }
-
-  /*Footer*/
-  div.footer {
-    display: none;
-  }
-  /*Footer*/
-
-}
 

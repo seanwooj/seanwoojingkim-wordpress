@@ -1,6 +1,9 @@
 $(function(){
   var window_height = $(window).height();
   $(".masthead .overlay, .masthead .text").height(window_height);
+  var image_width = $('.work_image').width();
+  $('.work_image').css({height: image_width});
+  $('.work_link').css({height: image_width});
 
   var scrolled_height = $(this).scrollTop();
   if (scrolled_height > 20) {
@@ -22,7 +25,7 @@ $(function(){
     limit: 8,
     template: "<li><a href='{{link}}'><img data-src='{{image}}' /></a></li>"
   });
-  // feed.run();
+  feed.run();
 
   var mobile_nav_open = false;
   $(".mobile-navigation").click(function() {
@@ -122,7 +125,7 @@ $(function(){
   });
   $(".social li").click(function() {
     var social_link_url = $(this).attr("data-url");
-    window.open(i, "_blank");
+    window.open(social_link_url, "_blank");
   });
 
 });

@@ -19,3 +19,6 @@ we aim to organize our site's CSS in the following pattern:
 @import 'layout/_skeleton.scss';
 @import 'layout/_header.scss';
 @import 'layout/_masthead.scss';
+@import 'layout/_project.scss';
+@import '../vendor/foundation-icon-fonts/_foundation-icons.scss';
+@import 'layout/_responsive.scss';
