@@ -75,8 +75,10 @@ table {
 ================================================== */
 body {
   background: #fff;
-  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #444;
+  color: #999;
+  font-family: georgia, palatino, baskerville, times, serif;
+  font-weight: 400;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
@@ -87,18 +89,17 @@ body {
   font-weight: 300;
 }
 
-.title {
+.title, .widget-title {
   text-transform: uppercase;
   position: relative;
   display: inline-block;
   margin-bottom: 30px;
   font-family: "proxima-nova";
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   text-transform: uppercase;
 }
-
-.title:after {
+.title:after, .widget-title:after {
   border-bottom: 1px solid #000000;
   content: "";
   display: block;
@@ -188,7 +189,7 @@ small {
 p {
   color: #999;
   font-family: georgia, palatino, baskerville, times, serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 36px;
 }
@@ -449,7 +450,7 @@ div.about p {
   font-family: georgia, palatino, baskerville, times, serif;
   font-weight: 400;
   line-height: 36px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   width: 640px;
 }
 
@@ -1654,6 +1655,7 @@ nav#navigation a.active:after {
   font-size: 60px;
   font-weight: 100;
   margin-bottom: 30px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -1665,7 +1667,7 @@ nav#navigation a.active:after {
   color: #acacac;
   font-family: georgia, palatino, baskerville, times, serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 40px;
 }
 
@@ -1719,6 +1721,12 @@ nav#navigation a.active:after {
   width: 100%;
   height: auto;
   margin-bottom: 2em;
+}
+
+.the-content div {
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
 /*
@@ -3269,3 +3277,5 @@ nav#navigation a.active:after {
 
   /*Footer*/
 }
+
+/*# sourceMappingURL=main.css.map */

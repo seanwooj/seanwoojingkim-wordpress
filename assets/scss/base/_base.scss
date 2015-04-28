@@ -52,8 +52,10 @@
 ================================================== */
   body {
     background: #fff;
-    font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #444;
+    color: #999;
+    font-family: georgia, palatino, baskerville, times, serif;
+    font-weight: 400;
+    font-size: 18px;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
  }
@@ -63,29 +65,30 @@
     font-weight: 300;
   }
 
-  .title {
+  .title, .widget-title {
     text-transform:uppercase;
     position:relative;
     display:inline-block;
     margin-bottom:30px;
     font-family: "proxima-nova";
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     text-transform: uppercase;
+
+    &:after {
+      border-bottom: 1px solid #000000;
+      content: "";
+      display: block;
+      position: relative;
+      top: 15px;
+      width: 20px;
+      z-index: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 50px;
+    }
   }
 
-  .title:after {
-    border-bottom: 1px solid #000000;
-    content: "";
-    display: block;
-    position: relative;
-    top: 15px;
-    width: 20px;
-    z-index: 0;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
-  }
 
 /* #Typography
 ================================================== */
@@ -115,7 +118,7 @@
   p {
     color: #999;
     font-family: georgia, palatino, baskerville, times, serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 36px;
   }
@@ -289,7 +292,7 @@ div.about p {
   font-family: georgia, palatino, baskerville, times, serif;
   font-weight: 400;
   line-height: 36px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   width: 640px;
 }
 
