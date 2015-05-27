@@ -11,7 +11,9 @@
       </div>
 
       <div class="one-third column">
-        <div class="footer-logo"></div>
+        <div class="footer-logo">
+          <h1><a href="<?php echo get_site_url() ?>">SWJK</a></h1>
+        </div>
         <p class="footer-slogan">Full Stack Web Developer</p>
       </div>
 

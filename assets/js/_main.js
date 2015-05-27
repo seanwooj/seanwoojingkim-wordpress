@@ -8,7 +8,7 @@ $(function(){
   var scrolled_height = $(this).scrollTop();
   if (scrolled_height > 20) {
     $("header").stop().animate({
-      backgroundColor: "#111111"
+      backgroundColor: "#E36B5D"
     }, 300);
   } else {
     $("header").stop().animate({
@@ -32,7 +32,7 @@ $(function(){
     if (mobile_nav_open === false) {
       $("#navigation ul").slideDown("fast");
       $("header").stop().animate({
-        backgroundColor: "#111111"
+        backgroundColor: "#E36B5D"
       }, 300);
       mobile_nav_open = true;
       return false;
@@ -41,7 +41,7 @@ $(function(){
       scrolled_height = $(window).scrollTop();
       if (scrolled_height > 20) {
         $("header").stop().animate({
-          backgroundColor: "#111111"
+          backgroundColor: "#E36B5D"
         }, 300);
       } else {
         $("header").stop().animate({
@@ -57,7 +57,7 @@ $(function(){
     scrolled_height = $(this).scrollTop();
     if (scrolled_height > 20) {
       $("header").stop().animate({
-        backgroundColor: "#111111"
+        backgroundColor: "#E36B5D"
       }, 300);
     } else {
       $("header").stop().animate({

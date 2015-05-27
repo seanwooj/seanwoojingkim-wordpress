@@ -74,9 +74,10 @@
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
+    color: $brand-primary;
 
     &:after {
-      border-bottom: 3px solid $brand-primary;
+      border-bottom: 2px solid $brand-primary;
       content: "";
       display: block;
       position: relative;
@@ -195,7 +196,7 @@
     color: $brand-primary;
     cursor: pointer;
     font-family: "brandon-grotesque";
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     outline: none;
     padding: 18px 20px;
@@ -663,7 +664,7 @@ div.who p {
 section.contact {
   background-attachment: fixed;
   background-color:#fafafa;
-  background-image: url(../images/plans.jpg);
+  background-image: url(../images/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -701,9 +702,9 @@ div.contact-info p {
 
 .form input[type="text"], .form input[type="email"], .form input[type="number"], .form textarea {
   background: transparent;
-  border: 2px solid #999999;
+  border: 2px solid #ccc;
   border-radius: 2px;
-  color: #999999;
+  color: #ccc;
   font-family: "freight-text-pro";
   font-size: 24px;
     height: 50px;
@@ -727,10 +728,10 @@ div.contact-info p {
     height: 50px;
 }
 
-.form input[type="text"]::-webkit-input-placeholder { color: #aaaaaa; }
-.form input[type="text"]::-moz-placeholder { color: #aaaaaa; }
-.form input[type="text"]:-ms-input-placeholder { color: #aaaaaa; }
-.form input[type="text"]:-moz-placeholder { color: #aaaaaa; }
+.form input[type="text"]::-webkit-input-placeholder { color: #ccc; }
+.form input[type="text"]::-moz-placeholder { color: #ccc; }
+.form input[type="text"]:-ms-input-placeholder { color: #ccc; }
+.form input[type="text"]:-moz-placeholder { color: #ccc; }
 
 .form textarea {
     height: 170px;
@@ -771,7 +772,7 @@ div.contact-info p {
 }
 
 div.footer {
-  background-color: #111111;
+  background-color: $brand-primary;
   padding: 40px 0 90px;
 }
 
@@ -807,19 +808,23 @@ div.footer .arrow a:hover {
 }
 
 div.footer .footer-logo {
-  background-image: url(../images/logo.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
   height: 45px;
   position:relative;
   width: 130px;
+  h1 {
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    a {
+      color: white;
+    }
+  }
 }
 
 div.footer .footer-slogan {
-  color:#6c6c6c;
-  font-family: "brandon-grotesque";
-  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  font-family: "freight-text-pro";
+  font-size: 16px;
   font-weight: normal;
   margin-top: -10px;
   position:relative;
@@ -833,9 +838,9 @@ div.footer .social { margin-top: 18px; }
 
 div.footer .right li {
   background-color: transparent;
-  border: 2px solid #444444;
+  border: 2px solid white;
   border-radius: 9999px;
-  color: #444444;
+  color: white;
   cursor: pointer;
   display: inline;
   font-size: 30px;

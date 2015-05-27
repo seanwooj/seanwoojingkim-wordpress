@@ -1292,7 +1292,7 @@ jQuery.extend( jQuery.easing,
   var scrolled_height = $(this).scrollTop();
   if (scrolled_height > 20) {
     $("header").stop().animate({
-      backgroundColor: "#111111"
+      backgroundColor: "#E36B5D"
     }, 300);
   } else {
     $("header").stop().animate({
@@ -1316,7 +1316,7 @@ jQuery.extend( jQuery.easing,
     if (mobile_nav_open === false) {
       $("#navigation ul").slideDown("fast");
       $("header").stop().animate({
-        backgroundColor: "#111111"
+        backgroundColor: "#E36B5D"
       }, 300);
       mobile_nav_open = true;
       return false;
@@ -1325,7 +1325,7 @@ jQuery.extend( jQuery.easing,
       scrolled_height = $(window).scrollTop();
       if (scrolled_height > 20) {
         $("header").stop().animate({
-          backgroundColor: "#111111"
+          backgroundColor: "#E36B5D"
         }, 300);
       } else {
         $("header").stop().animate({
@@ -1341,7 +1341,7 @@ jQuery.extend( jQuery.easing,
     scrolled_height = $(this).scrollTop();
     if (scrolled_height > 20) {
       $("header").stop().animate({
-        backgroundColor: "#111111"
+        backgroundColor: "#E36B5D"
       }, 300);
     } else {
       $("header").stop().animate({
