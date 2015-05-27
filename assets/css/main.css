@@ -76,9 +76,9 @@ table {
 body {
   background: #fff;
   color: #999;
-  font-family: georgia, palatino, baskerville, times, serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: "freight-text-pro", georgia, palatino, baskerville, times, serif;
+  font-weight: normal;
+  font-size: 24px;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
@@ -94,18 +94,18 @@ body {
   position: relative;
   display: inline-block;
   margin-bottom: 30px;
-  font-family: "proxima-nova";
+  font-family: "brandon-grotesque";
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .title:after, .widget-title:after {
-  border-bottom: 1px solid #000000;
+  border-bottom: 3px solid #E36B5D;
   content: "";
   display: block;
   position: relative;
   top: 15px;
-  width: 20px;
+  width: 100%;
   z-index: 0;
   margin-right: auto;
   margin-left: auto;
@@ -116,7 +116,7 @@ body {
 ================================================== */
 h1, h2, h3, h4, h5, h6 {
   color: #181818;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "brandon-grotesque", sans-serif;
   letter-spacing: 0.1rem;
   font-weight: 300;
   line-height: normal;
@@ -127,7 +127,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-family: "proxima-nova";
+  font-family: "brandon-grotesque";
   font-size: 46px;
   margin-bottom: 14px;
 }
@@ -188,9 +188,9 @@ small {
 
 p {
   color: #999;
-  font-family: georgia, palatino, baskerville, times, serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: "freight-text-pro", georgia, palatino, baskerville, times, serif;
+  font-size: 24px;
+  font-weight: normal;
   line-height: 36px;
 }
 
@@ -239,7 +239,7 @@ a, a:visited {
 }
 
 a:hover, a:focus {
-  color: #000;
+  color: #E36B5D;
 }
 
 p a, p a:visited {
@@ -257,8 +257,8 @@ a, .errorForm {
 a.read_more {
   color: #E36B5D;
   cursor: pointer;
-  font-family: "proxima-nova";
-  font-size: 14px;
+  font-family: "brandon-grotesque";
+  font-size: 20px;
   font-weight: 700;
   padding: 18px 20px;
   text-transform: uppercase;
@@ -335,7 +335,7 @@ button {
   border-radius: 2px;
   color: #E36B5D;
   cursor: pointer;
-  font-family: "proxima-nova";
+  font-family: "brandon-grotesque";
   font-size: 14px;
   font-weight: 500;
   outline: none;
@@ -447,11 +447,12 @@ legend span {
 /*About*/
 div.about p {
   color: #999;
-  font-family: georgia, palatino, baskerville, times, serif;
-  font-weight: 400;
+  font-family: "freight-text-pro", georgia, palatino, baskerville, times, serif;
+  font-weight: normal;
   line-height: 36px;
   margin: 0 auto 20px;
   width: 640px;
+  text-align: justify;
 }
 
 div.about button {
@@ -560,6 +561,13 @@ section.work .work_link .overlay_content h5 {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
+  font-family: 'freight-text-pro';
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
+section.work .work_link .overlay_content h3 {
+  text-transform: uppercase;
 }
 
 section.work .work_link:hover .overlay_content h3, section.work .work_link:hover .overlay_content h5 {
@@ -662,7 +670,7 @@ section.work .work_link .button h6 {
   text-transform: uppercase;
   bottom: -15px;
   position: absolute;
-  font-weight: 400;
+  font-weight: normal;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opactiy=0);
   -moz-opacity: 0;
@@ -716,7 +724,7 @@ div.who img {
 div.who h2 {
   text-align: center;
   font-size: 18px;
-  font-family: "proxima-nova";
+  font-family: "brandon-grotesque";
   font-weight: 600;
   text-transform: uppercase;
   color: #000000;
@@ -739,7 +747,7 @@ div.who p {
   border-top: 1px solid #cccccc;
   font-family: georgia, palatino, baskerville, times, serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: normal;
   letter-spacing: 0.2px;
   line-height: 30px;
   margin: 0 auto;
@@ -839,8 +847,8 @@ div.contact-info p {
   border: 2px solid #999999;
   border-radius: 2px;
   color: #999999;
-  font-family: "proxima-nova";
-  font-size: 14px;
+  font-family: "freight-text-pro";
+  font-size: 24px;
   height: 50px;
   margin-bottom: 16px;
   outline-width: 0;
@@ -960,9 +968,9 @@ div.footer .footer-logo {
 
 div.footer .footer-slogan {
   color: #6c6c6c;
-  font-family: "proxima-nova";
+  font-family: "brandon-grotesque";
   font-size: 12px;
-  font-weight: 400;
+  font-weight: normal;
   margin-top: -10px;
   position: relative;
 }
@@ -1487,19 +1495,23 @@ header {
 }
 
 .logo {
-  background-image: url(../images/logo.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   cursor: pointer;
   height: 20px;
-  margin: 26px 0;
+  margin: 19px 0;
   width: 234px;
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -ms-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+}
+.logo h1 {
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.logo h1 a {
+  color: white;
 }
 
 .logo:hover {
@@ -1525,7 +1537,7 @@ nav#navigation li {
 
 nav#navigation li a {
   color: #ffffff;
-  font-family: "proxima-nova";
+  font-family: "brandon-grotesque";
   font-weight: 500;
   font-size: 14px;
   display: block;
@@ -1651,11 +1663,11 @@ nav#navigation a.active:after {
 
 .masthead h1 {
   color: #ffffff;
-  font-family: 'proxima-nova';
+  font-family: 'brandon-grotesque';
   font-size: 60px;
   font-weight: 100;
   margin-bottom: 30px;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -1665,16 +1677,16 @@ nav#navigation a.active:after {
 
 .masthead p {
   color: #acacac;
-  font-family: georgia, palatino, baskerville, times, serif;
+  font-family: "freight-text-pro", georgia, palatino, baskerville, times, serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 40px;
 }
 
 .masthead span {
   color: #acacac;
   cursor: pointer;
-  font-family: "proxima-nova";
+  font-family: "brandon-grotesque";
   font-size: 16px;
   font-weight: 600;
   text-decoration: underline;
@@ -1728,7 +1740,7 @@ nav#navigation a.active:after {
 }
 .the-content div {
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.5em;
 }
 

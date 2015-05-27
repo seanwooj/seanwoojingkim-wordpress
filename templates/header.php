@@ -13,6 +13,11 @@
       <div class="one-third column">
         <!--Logo-->
         <div class="logo">
+          <h1>
+            <a href="<?php echo get_site_url(); ?>">
+              SWJK
+            </a>
+          </h1>
         </div>
         <!--Logo-->
       </div>
