@@ -3,7 +3,7 @@ $(function(){
   $(".masthead .overlay, .masthead .text").height(window_height);
   var image_width = $('.work_image').width();
   $('.work_image').css({height: image_width});
-  $('.work_link').css({height: image_width});
+  $('.work_link, .color-block').css({height: image_width});
 
   var scrolled_height = $(this).scrollTop();
   if (scrolled_height > 20) {

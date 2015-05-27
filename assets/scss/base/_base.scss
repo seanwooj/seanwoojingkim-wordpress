@@ -322,7 +322,20 @@ div.about #face-image {
 
 /*Work*/
 section.work {
-
+  .color-block {
+    height: 10px;
+    width: 33%;
+    float: left;
+    &.red {
+      background: $brand-primary;
+    }
+    &.turquoise {
+      background: #20C6AB;
+    }
+    &.green {
+      background: #87E99C;
+    }
+  }
 }
 
 section.work .work_link {

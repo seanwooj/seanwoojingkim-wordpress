@@ -8,11 +8,21 @@
   );
 
   $projects = get_posts( $query );
+  $count = 0;
+  $maxCount = 6;
 
   ?>
   <section class="work clearfix" id="work"><?php
 
     foreach ( $projects as $project ) {
       portfolio_item($project);
-    } ?>
+      $count = $count + 1;
+    };
+
+    while( $count < $maxCount ) {
+      color_block();
+      $count = $count + 1;
+    }
+
+    ?>
   </section>

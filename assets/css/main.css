@@ -480,6 +480,21 @@ div.about #face-image {
 
 /*About*/
 /*Work*/
+section.work .color-block {
+  height: 10px;
+  width: 33%;
+  float: left;
+}
+section.work .color-block.red {
+  background: #E36B5D;
+}
+section.work .color-block.turquoise {
+  background: #20C6AB;
+}
+section.work .color-block.green {
+  background: #87E99C;
+}
+
 section.work .work_link {
   display: block;
   height: auto;

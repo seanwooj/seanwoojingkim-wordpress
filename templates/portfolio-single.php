@@ -24,3 +24,14 @@
 </a>
 <!--<pre><?php print_r($post); //debug ?></pre>-->
 <?php } ?>
+
+<?php function color_block() { ?>
+  <div class="color-block <?php echo color_block_class(); ?>">
+  </div>
+<?php } ?>
+
+<?php function color_block_class() {
+  $classes = array('red', 'green', 'turquoise');
+  $class = $classes[array_rand($classes)];
+  return $class;
+} ?>
